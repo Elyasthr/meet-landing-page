@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+header .logo {
+  height: 28px;
+  width: 119px;
+  margin: 48px 128px 0 128px;
+}
+header .image-hero {
+  display: flex;
+  justify-content: space-between;
+  height: 153px;
+  width: 414px;
+  margin-top: 54px;
+  margin-left: -20px;
+}
+
+.card {
+  width: 375px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.card h1 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: #28283D;
+  margin: 48px 24px 0 24px;
+  text-align: center;
+}
+.card .bd1 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #87879D;
+  line-height: 26px;
+  text-align: center;
+  margin: 24px 24px 32px 24px;
+}
+.card .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .btn-download {
+  font-family: "Red Hat Display", sans-serif;
+  width: 193px;
+  height: 58px;
+  margin-bottom: 16px;
+  border-radius: 29px;
+  border: none;
+  background-color: #4D96A9;
+}
+.card .btn-download a {
+  color: #FAFAFA;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+}
+.card .btn-download a span {
+  color: #8FE3F9;
+}
+.card .btn-advice {
+  font-family: "Red Hat Display", sans-serif;
+  width: 139px;
+  height: 58px;
+  border-radius: 29px;
+  border: none;
+  background-color: #855FB1;
+}
+.card .btn-advice a {
+  color: #FAFAFA;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+}
+.card .number {
+  font-weight: 900;
+  color: #87879D;
+  font-size: 16px;
+  line-height: 26px;
+  height: 56px;
+  width: 56px;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 29px;
+}
+.card .img-group {
+  margin: 64px 0;
+}
+.card .img-group img {
+  height: 143px;
+  width: 151px;
+  border-radius: 12px;
+}
+.card .img-group .img-1, .card .img-group .img-3 {
+  margin-right: 24px;
+  margin-left: 24px;
+}
+.card .img-group .img-1, .card .img-group .img-2 {
+  margin-bottom: 24px;
+}
+.card h2 {
+  font-weight: #4D96A9;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #4D96A9;
+  margin: 0 50px 24px 50px;
+}
+.card h3 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  color: #28283D;
+}
+.card .bd2 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #87879D;
+  line-height: 26px;
+  text-align: center;
+  margin: 32px 24px 0 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
