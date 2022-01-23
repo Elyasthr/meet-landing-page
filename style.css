@@ -11,20 +11,6 @@ body {
   font-family: "Red Hat Display", sans-serif;
 }
 
-header .logo {
-  height: 28px;
-  width: 119px;
-  margin: 48px 128px 0 128px;
-}
-header .image-hero {
-  display: flex;
-  justify-content: space-between;
-  height: 153px;
-  width: 414px;
-  margin-top: 54px;
-  margin-left: -20px;
-}
-
 .card {
   width: 375px;
   margin: auto;
@@ -33,7 +19,23 @@ header .image-hero {
   bottom: 0;
   left: 0;
 }
-.card h1 {
+.card header .logo {
+  height: 28px;
+  width: 119px;
+  margin: 48px 128px 0 128px;
+}
+.card header .image-hero {
+  display: flex;
+  justify-content: space-between;
+  height: 153px;
+  width: 414px;
+  margin-top: 54px;
+  margin-left: -20px;
+}
+.card .little-card {
+  position: relative;
+}
+.card .little-card h1 {
   font-weight: 900;
   font-size: 40px;
   line-height: 44px;
@@ -41,7 +43,7 @@ header .image-hero {
   margin: 48px 24px 0 24px;
   text-align: center;
 }
-.card .bd1 {
+.card .little-card .bd1 {
   font-weight: 500;
   font-size: 16px;
   color: #87879D;
@@ -49,12 +51,12 @@ header .image-hero {
   text-align: center;
   margin: 24px 24px 32px 24px;
 }
-.card .btn {
+.card .little-card .btn {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.card .btn-download {
+.card .little-card .btn-download {
   font-family: "Red Hat Display", sans-serif;
   width: 193px;
   height: 58px;
@@ -63,16 +65,16 @@ header .image-hero {
   border: none;
   background-color: #4D96A9;
 }
-.card .btn-download a {
+.card .little-card .btn-download a {
   color: #FAFAFA;
   font-weight: 900;
   font-size: 16px;
   line-height: 26px;
 }
-.card .btn-download a span {
+.card .little-card .btn-download a span {
   color: #8FE3F9;
 }
-.card .btn-advice {
+.card .little-card .btn-advice {
   font-family: "Red Hat Display", sans-serif;
   width: 139px;
   height: 58px;
@@ -80,13 +82,21 @@ header .image-hero {
   border: none;
   background-color: #855FB1;
 }
-.card .btn-advice a {
+.card .little-card .btn-advice a {
   color: #FAFAFA;
   font-weight: 900;
   font-size: 16px;
   line-height: 26px;
 }
-.card .number {
+.card .little-card .first-hr {
+  position: absolute;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  height: 84px;
+  margin-left: 187px;
+  bottom: -164px;
+}
+.card .little-card .number-1 {
+  position: absolute;
   font-weight: 900;
   color: #87879D;
   font-size: 16px;
@@ -95,9 +105,13 @@ header .image-hero {
   width: 56px;
   border: 1px solid rgba(135, 135, 157, 0.25);
   border-radius: 29px;
+  padding: 15px 17px;
+  background-color: #FAFAFA;
+  margin-left: 160px;
+  bottom: -220px;
 }
 .card .img-group {
-  margin: 64px 0;
+  margin: 268px 0 64px 0;
 }
 .card .img-group img {
   height: 143px;
@@ -134,7 +148,77 @@ header .image-hero {
   color: #87879D;
   line-height: 26px;
   text-align: center;
-  margin: 32px 24px 0 24px;
+  margin: 32px 24px 176px 24px;
+}
+
+footer {
+  position: absolute;
+  height: 428px;
+  width: 375px;
+}
+footer .second-hr {
+  position: absolute;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  height: 84px;
+  margin-left: 187px;
+  bottom: 456px;
+}
+footer .number-2 {
+  position: absolute;
+  font-weight: 900;
+  color: #87879D;
+  font-size: 16px;
+  line-height: 26px;
+  height: 56px;
+  width: 56px;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 29px;
+  padding: 15px 17px;
+  background-color: #FAFAFA;
+  margin-left: 160px;
+  bottom: 400px;
+}
+footer .mask {
+  background-image: url("./assets/mobile/image-footer.jpg");
+  background-size: 375px 428px;
+  background-color: #4d96a9;
+  background-blend-mode: soft-light;
+  color: #FAFAFA;
+}
+footer .mask h4 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
+  padding: 92px 24px 0 24px;
+  color: #FAFAFA;
+}
+footer .mask p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  width: 327px;
+  margin: 24px 24px 0 24px;
+}
+footer .mask .btn-download-2 {
+  font-family: "Red Hat Display", sans-serif;
+  width: 193px;
+  height: 58px;
+  margin-bottom: 16px;
+  border-radius: 29px;
+  border: none;
+  background-color: #855FB1;
+  margin: 32px 91px 72px 91px;
+}
+footer .mask .btn-download-2 a {
+  color: #FAFAFA;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+}
+footer .mask .btn-download-2 a span {
+  color: #D9B8FF;
 }
 
 /*# sourceMappingURL=style.css.map */

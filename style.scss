@@ -37,24 +37,10 @@ body{
   font-family: $font;
 }
 
-header{
-  .logo{
-    height: 28px;
-    width: 119px;
-    margin: 48px 128px 0 128px;
-  }
-  .image-hero{
-    display: flex;
-    justify-content: space-between;
-    height: 153px;
-    width: 414px;
-    margin-top: 54px;
-    margin-left: -20px;
-    
-  }
-}
+
 
 .card{
+  
 
   width: 375px;
   margin: auto;
@@ -62,81 +48,115 @@ header{
   right: 0;
   bottom: 0;
   left: 0;
-  //border: 1px solid black;
 
-  h1{
-    font-weight: $font-black;
-    font-size: 40px;
-    line-height: 44px;
-    color: $primary-color-3;
-    margin: 48px 24px 0 24px;
-    text-align: center;
-  }
-  
-  .bd1{
-    font-weight: $font-medium;
-    font-size: 16px;
-    color: $primary-color-4;
-    line-height: 26px;
-    text-align: center;
-    margin: 24px 24px 32px 24px;
+  header{
+    .logo{
+      height: 28px;
+      width: 119px;
+      margin: 48px 128px 0 128px;
+    }
+    .image-hero{
+      display: flex;
+      justify-content: space-between;
+      height: 153px;
+      width: 414px;
+      margin-top: 54px;
+      margin-left: -20px;
+      
+    }
   }
 
-  .btn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-
-  .btn-download{
-    font-family: $font;
-    width: 193px;
-    height: 58px;
-    margin-bottom: 16px;
-    border-radius: 29px;
-    border: none;
-    background-color: #4D96A9;
-    
-    a{
-      color: #FAFAFA;
+  .little-card{
+    position: relative;
+    h1{
       font-weight: $font-black;
+      font-size: 40px;
+      line-height: 44px;
+      color: $primary-color-3;
+      margin: 48px 24px 0 24px;
+      text-align: center;
+    }
+    
+    .bd1{
+      font-weight: $font-medium;
       font-size: 16px;
+      color: $primary-color-4;
       line-height: 26px;
-      span{
-        color: #8FE3F9;
+      text-align: center;
+      margin: 24px 24px 32px 24px;
+    }
+  
+    .btn{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+  
+    .btn-download{
+      font-family: $font;
+      width: 193px;
+      height: 58px;
+      margin-bottom: 16px;
+      border-radius: 29px;
+      border: none;
+      background-color: #4D96A9;
+      
+      a{
+        color: #FAFAFA;
+        font-weight: $font-black;
+        font-size: 16px;
+        line-height: 26px;
+        span{
+          color: #8FE3F9;
+        }
       }
     }
-  }
-
-  .btn-advice{
-    font-family: $font;
-    width: 139px;
-    height: 58px;
-    border-radius: 29px;
-    border: none;
-    background-color: #855FB1;
-    a{
-      color: #FAFAFA;
-      font-weight: $font-black;
-      font-size: 16px;
-      line-height: 26px;
+  
+    .btn-advice{
+      font-family: $font;
+      width: 139px;
+      height: 58px;
+      border-radius: 29px;
+      border: none;
+      background-color: #855FB1;
+      a{
+        color: #FAFAFA;
+        font-weight: $font-black;
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  
+    .first-hr{
+      position: absolute;
+      border: 1px solid rgba(135, 135, 157, 0.25);
+      height: 84px;
+      margin-left: 187px;
+      bottom: -164px;
+    }
+  
+    .number-1{
+        position: absolute;
+        font-weight: $font-black;
+        color: #87879D;
+        font-size: 16px;
+        line-height: 26px;
+        height: 56px;
+        width: 56px;
+        border: 1px solid rgba(135, 135, 157, 0.25);
+        border-radius: 29px;
+        padding: 15px 17px;
+        background-color: #FAFAFA;
+        margin-left: 160px;
+        bottom: -220px;
     }
   }
 
-  .number{
-    font-weight: $font-black;
-    color: #87879D;
-    font-size: 16px;
-    line-height: 26px;
-    height: 56px;
-    width: 56px;
-    border: 1px solid rgba(135, 135, 157, 0.25);
-    border-radius: 29px;
-  }
+  
 
   .img-group{
-      margin: 64px 0;
+      margin: 268px 0 64px 0;
       img{
         height: 143px;
         width: 151px;
@@ -178,8 +198,89 @@ header{
     color: $primary-color-4;
     line-height: 26px;
     text-align: center;
-    margin: 32px 24px 0 24px;
+    margin: 32px 24px 176px 24px;
   }
   
+}
+
+
+
+footer{
+  position: absolute;
+  height: 428px;
+  width: 375px;
+  
+    .second-hr{
+      position: absolute;
+      border: 1px solid rgba(135, 135, 157, 0.25);
+      height: 84px;
+      margin-left: 187px;
+      bottom: 456px;
+    }
+    .number-2{
+      position: absolute;
+      font-weight: $font-black;
+      color: #87879D;
+      font-size: 16px;
+      line-height: 26px;
+      height: 56px;
+      width: 56px;
+      border: 1px solid rgba(135, 135, 157, 0.25);
+      border-radius: 29px;
+      padding: 15px 17px;
+      background-color: #FAFAFA;
+      margin-left: 160px;
+      bottom: 400px;
+    }
+
+
+
+  .mask{
+    
+    background-image: url('./assets/mobile/image-footer.jpg');
+    background-size: 375px 428px  ; 
+    background-color: rgba(77, 150, 169, 1);
+    background-blend-mode:soft-light;
+    
+    color: #FAFAFA;
+
+    
+      
+    h4{
+      font-weight: $font-black;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: center;
+      padding: 92px 24px 0 24px;
+      color: #FAFAFA;
+    }
+    p{
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      width: 327px;
+      margin: 24px 24px 0 24px;;
+    }
+    .btn-download-2{
+      font-family: $font;
+      width: 193px;
+      height: 58px;
+      margin-bottom: 16px;
+      border-radius: 29px;
+      border: none;
+      background-color: #855FB1;
+      margin: 32px 91px 72px 91px;
+      a{
+        color: #FAFAFA;
+        font-weight: $font-black;
+        font-size: 16px;
+        line-height: 26px;
+        span{
+          color: #D9B8FF;
+        }
+      }
+    }
+  }
 }
 
