@@ -19,6 +19,11 @@ body {
   bottom: 0;
   left: 0;
 }
+@media screen and (min-width: 768px) {
+  .card {
+    width: 768px;
+  }
+}
 .card header .logo {
   height: 28px;
   width: 119px;
@@ -31,6 +36,16 @@ body {
   width: 414px;
   margin-top: 54px;
   margin-left: -20px;
+}
+@media screen and (min-width: 768px) {
+  .card header .logo {
+    margin: 48px 324px 0 324px;
+  }
+  .card header .image-hero {
+    height: 303px;
+    width: 820px;
+    margin-top: 64px;
+  }
 }
 .card .little-card {
   position: relative;
@@ -74,6 +89,9 @@ body {
 .card .little-card .btn-download a span {
   color: #8FE3F9;
 }
+.card .little-card .btn-download:hover {
+  background-color: #71C0D4;
+}
 .card .little-card .btn-advice {
   font-family: "Red Hat Display", sans-serif;
   width: 139px;
@@ -87,6 +105,9 @@ body {
   font-weight: 900;
   font-size: 16px;
   line-height: 26px;
+}
+.card .little-card .btn-advice:hover {
+  background-color: #B18BDD;
 }
 .card .little-card .first-hr {
   position: absolute;
@@ -110,6 +131,31 @@ body {
   margin-left: 160px;
   bottom: -220px;
 }
+@media screen and (min-width: 768px) {
+  .card .little-card h1 {
+    font-size: 48px;
+    line-height: 48px;
+    margin: 72px 214px 0 214px;
+  }
+  .card .little-card .bd1 {
+    margin: 24px 155px 32px 154px;
+  }
+  .card .little-card .btn {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card .little-card .btn-download {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  .card .little-card .first-hr {
+    margin-left: 383px;
+    bottom: -164px;
+  }
+  .card .little-card .number-1 {
+    margin-left: 356px;
+  }
+}
 .card .img-group {
   margin: 268px 0 64px 0;
 }
@@ -125,8 +171,19 @@ body {
 .card .img-group .img-1, .card .img-group .img-2 {
   margin-bottom: 24px;
 }
+@media screen and (min-width: 768px) {
+  .card .img-group {
+    margin: 268px 0 48px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .card .img-group .img-1, .card .img-group .img-2, .card .img-group .img-3, .card .img-group .img-4 {
+    margin: 0;
+    margin-left: 11px;
+  }
+}
 .card h2 {
-  font-weight: #4D96A9;
+  font-weight: 900;
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 4px;
@@ -140,6 +197,7 @@ body {
   font-size: 32px;
   line-height: 36px;
   text-align: center;
+  margin: 0 24px;
   color: #28283D;
 }
 .card .bd2 {
@@ -149,6 +207,19 @@ body {
   line-height: 26px;
   text-align: center;
   margin: 32px 24px 176px 24px;
+}
+@media screen and (min-width: 768px) {
+  .card h2 {
+    margin: 0 246px 16px 247px;
+  }
+  .card h3 {
+    font-size: 40px;
+    line-height: 44px;
+    margin: 0 161px;
+  }
+  .card .bd2 {
+    margin: 32px 97px 192px 97px;
+  }
 }
 
 footer {
@@ -219,6 +290,37 @@ footer .mask .btn-download-2 a {
 }
 footer .mask .btn-download-2 a span {
   color: #D9B8FF;
+}
+footer .mask .btn-download-2:hover {
+  background-color: #B18BDD;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    width: 768px;
+    height: 428px;
+  }
+  footer .second-hr {
+    margin-left: 383px;
+  }
+  footer .number-2 {
+    margin-left: 356px;
+  }
+  footer .mask {
+    background-image: url("./assets/tablet/image-footer.jpg");
+    background-size: 768px 428px;
+  }
+  footer .mask h4 {
+    font-size: 40px;
+    line-height: 44px;
+    padding: 92px 154px 0 154px;
+  }
+  footer .mask p {
+    width: 573px;
+    margin: 32px 96px 0 96px;
+  }
+  footer .mask .btn-download-2 {
+    margin: 40px 286px 66px 286px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

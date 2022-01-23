@@ -40,14 +40,17 @@ body{
 
 
 .card{
-  
-
   width: 375px;
   margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+
+  @include media-min("tablet") {
+    width: 768px;
+  }
+
 
   header{
     .logo{
@@ -64,10 +67,23 @@ body{
       margin-left: -20px;
       
     }
+
+    @include media-min("tablet") {
+      .logo{
+        margin: 48px 324px 0 324px ;
+      }
+      .image-hero{
+        height: 303px; 
+        width: 820px;
+        margin-top: 64px;
+      }
+    }
+
   }
 
   .little-card{
     position: relative;
+
     h1{
       font-weight: $font-black;
       font-size: 40px;
@@ -111,6 +127,10 @@ body{
           color: #8FE3F9;
         }
       }
+
+      &:hover{
+        background-color: #71C0D4;
+      }
     }
   
     .btn-advice{
@@ -125,6 +145,10 @@ body{
         font-weight: $font-black;
         font-size: 16px;
         line-height: 26px;
+      }
+
+      &:hover{
+        background-color: #B18BDD;
       }
     }
   
@@ -151,6 +175,37 @@ body{
         margin-left: 160px;
         bottom: -220px;
     }
+
+    @include media-min("tablet") {
+      h1{
+        font-size: 48px;
+        line-height: 48px;
+        margin: 72px 214px 0 214px;
+      }
+
+      .bd1{
+        margin: 24px 155px 32px 154px;
+      }
+
+      .btn{
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .btn-download{
+        margin-bottom: 0;
+        margin-right: 16px;
+      }
+
+      .first-hr{
+        margin-left: 383px;
+        bottom: -164px;
+      }
+    
+      .number-1{
+          margin-left: 356px;
+      }
+    }
   }
 
   
@@ -171,10 +226,21 @@ body{
         margin-bottom: 24px;
         
       }
-  }
+
+      @include media-min("tablet") {
+        margin: 268px 0 48px 0;
+        display: flex;
+        justify-content: center;
+
+        .img-1,.img-2,.img-3, .img-4{
+          margin: 0;
+          margin-left: 11px;
+        }
+      }
+    }
 
   h2{
-      font-weight: $primary-color-1;
+      font-weight: $font-black;
       font-size: 16px;
       line-height: 26px;
       letter-spacing: 4px;
@@ -189,6 +255,7 @@ body{
     font-size: 32px;
     line-height: 36px;
     text-align: center;
+    margin: 0 24px;
     color: #28283D;
   }
 
@@ -199,6 +266,20 @@ body{
     line-height: 26px;
     text-align: center;
     margin: 32px 24px 176px 24px;
+  }
+
+  @include media-min("tablet") {
+    h2{
+      margin: 0 246px 16px 247px;
+    }
+    h3{
+      font-size: 40px;
+      line-height: 44px;
+      margin: 0 161px;
+    }
+    .bd2{
+      margin: 32px 97px 192px 97px;
+    }
   }
   
 }
@@ -232,8 +313,6 @@ footer{
       margin-left: 160px;
       bottom: 400px;
     }
-
-
 
   .mask{
     
@@ -279,6 +358,38 @@ footer{
         span{
           color: #D9B8FF;
         }
+      }
+      &:hover{
+        background-color: #B18BDD;
+      }
+    }
+  }
+
+  @include media-min("tablet") {
+    width: 768px;
+    height: 428px;
+
+    .second-hr{
+      margin-left: 383px;
+    }
+    .number-2{
+      margin-left: 356px;
+    }
+
+    .mask{
+      background-image: url('./assets/tablet/image-footer.jpg');
+      background-size: 768px 428px  ;
+      h4{
+        font-size: 40px;
+        line-height: 44px;
+        padding: 92px 154px 0 154px;
+      }
+      p{
+        width: 573px;
+        margin: 32px 96px 0 96px;;
+      }
+      .btn-download-2{
+        margin: 40px 286px 66px 286px; 
       }
     }
   }
