@@ -51,6 +51,9 @@ body{
     width: 768px;
   }
 
+  @include media-min("desktop") {
+    width: 1440px;
+  }
 
   header{
     .logo{
@@ -76,6 +79,29 @@ body{
         height: 303px; 
         width: 820px;
         margin-top: 64px;
+      }
+    }
+
+    @include media-min("desktop") {
+      .logo{
+        margin: 48px 660px 0 660px ;
+      }
+      .image-hero{
+        height: 303px; 
+        width: 820px;
+        margin-top: 64px;
+        margin-left: 0;
+      }
+
+      .test{
+        margin-right: 719px;
+        margin-left: -35px;
+      }
+
+      .test2{
+        height: 303px; 
+        width: 820px;
+        margin-top: 52px;
       }
     }
 
@@ -206,6 +232,32 @@ body{
           margin-left: 356px;
       }
     }
+
+    @include media-min("desktop") {
+      top: -373px;
+      width: 540px;
+      margin: 108px 450px 0 450px;
+      h1{
+        font-size: 64px;
+        line-height: 64px;
+        margin: 0;
+      }
+      .bd1{
+        font-size: 18px;
+        line-height: 26px;
+        margin:34px 0 32px 0;
+      }
+
+      .first-hr{
+        margin-left: 268px;
+        bottom: -194px;
+      }
+    
+      .number-1{
+          margin-left: 241px;
+          bottom: -250px;
+      }
+    }
   }
 
   
@@ -231,10 +283,27 @@ body{
         margin: 268px 0 48px 0;
         display: flex;
         justify-content: center;
-
+        img{
+          height: 156px;
+          width: 164px;
+        }
         .img-1,.img-2,.img-3, .img-4{
           margin: 0;
           margin-left: 11px;
+        }
+      }
+
+      @include media-min("desktop") {
+        margin: -64px 0 48px 0;
+        display: flex;
+        justify-content: center;
+        img{
+          height: 243px;
+          width: 255px;
+        }
+        .img-1,.img-2,.img-3, .img-4{
+          margin: 0;
+          margin-left: 30px;
         }
       }
     }
@@ -281,10 +350,24 @@ body{
       margin: 32px 97px 192px 97px;
     }
   }
+
+  @include media-min("desktop") {
+    h2{
+      margin: 0 580px 16px 580px;
+    }
+    h3{
+      font-size: 40px;
+      line-height: 44px;
+      margin: 0 497px;
+    }
+    .bd2{
+      font-size: 18px;;
+      line-height: 26px;
+      margin: 32px 450px 184px 450px;
+    }
+  }
   
 }
-
-
 
 footer{
   position: absolute;
@@ -390,6 +473,45 @@ footer{
       }
       .btn-download-2{
         margin: 40px 286px 66px 286px; 
+      }
+    }
+  }
+
+  @include media-min("desktop") {
+    width: 1440px;
+    height: 308px;
+
+    .second-hr{
+      margin-left: 719px;
+      bottom: 338px;
+    }
+    .number-2{
+      margin-left: 692px;
+      bottom: 282px;
+    }
+
+    .mask{
+      background-image: url('./assets/desktop/image-footer.jpg');
+      background-size: 1440px 308px  ;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4{
+        width: 350px;
+        font-size: 40px;
+        line-height: 44px;
+        padding: 0;
+        text-align: start;
+        margin: 0 0 0 165px;
+      }
+      p{
+        width: 350px;
+        margin: 116px 0 114px 0;
+        text-align: start;
+      }
+      .btn-download-2{
+        margin: 0 165px 0 0;
+
       }
     }
   }

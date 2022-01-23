@@ -24,6 +24,11 @@ body {
     width: 768px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 1440px;
+  }
+}
 .card header .logo {
   height: 28px;
   width: 119px;
@@ -45,6 +50,26 @@ body {
     height: 303px;
     width: 820px;
     margin-top: 64px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card header .logo {
+    margin: 48px 660px 0 660px;
+  }
+  .card header .image-hero {
+    height: 303px;
+    width: 820px;
+    margin-top: 64px;
+    margin-left: 0;
+  }
+  .card header .test {
+    margin-right: 719px;
+    margin-left: -35px;
+  }
+  .card header .test2 {
+    height: 303px;
+    width: 820px;
+    margin-top: 52px;
   }
 }
 .card .little-card {
@@ -156,6 +181,31 @@ body {
     margin-left: 356px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .card .little-card {
+    top: -373px;
+    width: 540px;
+    margin: 108px 450px 0 450px;
+  }
+  .card .little-card h1 {
+    font-size: 64px;
+    line-height: 64px;
+    margin: 0;
+  }
+  .card .little-card .bd1 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 34px 0 32px 0;
+  }
+  .card .little-card .first-hr {
+    margin-left: 268px;
+    bottom: -194px;
+  }
+  .card .little-card .number-1 {
+    margin-left: 241px;
+    bottom: -250px;
+  }
+}
 .card .img-group {
   margin: 268px 0 64px 0;
 }
@@ -177,9 +227,28 @@ body {
     display: flex;
     justify-content: center;
   }
+  .card .img-group img {
+    height: 156px;
+    width: 164px;
+  }
   .card .img-group .img-1, .card .img-group .img-2, .card .img-group .img-3, .card .img-group .img-4 {
     margin: 0;
     margin-left: 11px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card .img-group {
+    margin: -64px 0 48px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .card .img-group img {
+    height: 243px;
+    width: 255px;
+  }
+  .card .img-group .img-1, .card .img-group .img-2, .card .img-group .img-3, .card .img-group .img-4 {
+    margin: 0;
+    margin-left: 30px;
   }
 }
 .card h2 {
@@ -219,6 +288,21 @@ body {
   }
   .card .bd2 {
     margin: 32px 97px 192px 97px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card h2 {
+    margin: 0 580px 16px 580px;
+  }
+  .card h3 {
+    font-size: 40px;
+    line-height: 44px;
+    margin: 0 497px;
+  }
+  .card .bd2 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 32px 450px 184px 450px;
   }
 }
 
@@ -320,6 +404,43 @@ footer .mask .btn-download-2:hover {
   }
   footer .mask .btn-download-2 {
     margin: 40px 286px 66px 286px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    width: 1440px;
+    height: 308px;
+  }
+  footer .second-hr {
+    margin-left: 719px;
+    bottom: 338px;
+  }
+  footer .number-2 {
+    margin-left: 692px;
+    bottom: 282px;
+  }
+  footer .mask {
+    background-image: url("./assets/desktop/image-footer.jpg");
+    background-size: 1440px 308px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .mask h4 {
+    width: 350px;
+    font-size: 40px;
+    line-height: 44px;
+    padding: 0;
+    text-align: start;
+    margin: 0 0 0 165px;
+  }
+  footer .mask p {
+    width: 350px;
+    margin: 116px 0 114px 0;
+    text-align: start;
+  }
+  footer .mask .btn-download-2 {
+    margin: 0 165px 0 0;
   }
 }
 
