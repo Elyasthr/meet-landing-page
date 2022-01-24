@@ -29,44 +29,60 @@ body {
     width: 1440px;
   }
 }
+.card header {
+  max-width: 414px;
+  overflow-x: hidden;
+}
 .card header .logo {
   height: 28px;
   width: 119px;
   margin: 48px 128px 0 128px;
 }
-.card header .image-hero {
-  display: flex;
-  justify-content: space-between;
-  height: 153px;
-  width: 414px;
+.card header .img {
   margin-top: 54px;
   margin-left: -20px;
+  height: 153px;
+  width: 414px;
+}
+.card header .image-hero {
+  display: none;
 }
 @media screen and (min-width: 768px) {
+  .card header {
+    max-width: 820px;
+  }
   .card header .logo {
     margin: 48px 324px 0 324px;
   }
-  .card header .image-hero {
+  .card header .img {
+    margin-top: 64px;
+    margin-left: -30px;
     height: 303px;
     width: 820px;
-    margin-top: 64px;
   }
 }
 @media screen and (min-width: 1440px) {
+  .card header {
+    max-width: 1440px;
+  }
   .card header .logo {
     margin: 48px 660px 0 660px;
   }
+  .card header .img {
+    display: none;
+  }
   .card header .image-hero {
-    height: 303px;
+    display: flex;
     width: 820px;
     margin-top: 64px;
     margin-left: 0;
   }
-  .card header .test {
+  .card header .img-left {
+    height: 303px;
     margin-right: 719px;
     margin-left: -35px;
   }
-  .card header .test2 {
+  .card header .img-right {
     height: 303px;
     width: 820px;
     margin-top: 52px;
@@ -185,7 +201,7 @@ body {
   .card .little-card {
     top: -373px;
     width: 540px;
-    margin: 108px 450px 0 450px;
+    margin: 56px 450px 0 450px;
   }
   .card .little-card h1 {
     font-size: 64px;

@@ -34,12 +34,14 @@ $secondary-color-2: #D9B8FF;
 }
 
 body{
+  
   font-family: $font;
 }
 
 
 
 .card{
+  
   width: 375px;
   margin: auto;
   top: 0;
@@ -56,49 +58,69 @@ body{
   }
 
   header{
+    max-width: 414px;
+    overflow-x: hidden;
     .logo{
       height: 28px;
       width: 119px;
       margin: 48px 128px 0 128px;
-    }
-    .image-hero{
-      display: flex;
-      justify-content: space-between;
-      height: 153px;
-      width: 414px;
-      margin-top: 54px;
-      margin-left: -20px;
       
     }
 
+    .img{
+      
+      margin-top: 54px;
+      margin-left: -20px;
+      height: 153px;
+      width: 414px;
+      
+    }
+
+    .image-hero{
+      display: none;
+    }
+
     @include media-min("tablet") {
+      max-width: 820px;
       .logo{
         margin: 48px 324px 0 324px ;
       }
-      .image-hero{
-        height: 303px; 
-        width: 820px;
+      .img{
+      
         margin-top: 64px;
+        margin-left: -30px;
+        height: 303px;
+        width: 820px;
+        
       }
     }
-
+ 
     @include media-min("desktop") {
+      max-width: 1440px;
       .logo{
         margin: 48px 660px 0 660px ;
       }
+
+      .img{
+        display: none;
+      }
+
       .image-hero{
-        height: 303px; 
+        display: flex;
+        
         width: 820px;
         margin-top: 64px;
         margin-left: 0;
       }
 
-      .test{
+      .img-left{
+        height: 303px; 
         margin-right: 719px;
         margin-left: -35px;
       }
 
-      .test2{
+      .img-right{
+        
         height: 303px; 
         width: 820px;
         margin-top: 52px;
@@ -236,7 +258,7 @@ body{
     @include media-min("desktop") {
       top: -373px;
       width: 540px;
-      margin: 108px 450px 0 450px;
+      margin: 56px 450px 0 450px;
       h1{
         font-size: 64px;
         line-height: 64px;
