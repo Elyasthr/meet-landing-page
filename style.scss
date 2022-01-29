@@ -421,10 +421,8 @@ footer{
 
   .mask{
     
-    background-image: url('./assets/mobile/image-footer.jpg');
+    background-image: linear-gradient(rgba(77, 150, 169, 0.9),rgba(77, 150, 169, 0.9)100%), url('./assets/mobile/image-footer.jpg');
     background-size: 375px 428px  ; 
-    background-color: rgba(77, 150, 169, 1);
-    background-blend-mode:soft-light;
     
     color: #FAFAFA;
 
@@ -482,7 +480,7 @@ footer{
     }
 
     .mask{
-      background-image: url('./assets/tablet/image-footer.jpg');
+      background-image: linear-gradient(rgba(77, 150, 169, 0.9),rgba(77, 150, 169, 0.9)100%), url('./assets/tablet/image-footer.jpg');
       background-size: 768px 428px  ;
       h4{
         font-size: 40px;
@@ -513,7 +511,7 @@ footer{
     }
 
     .mask{
-      background-image: url('./assets/desktop/image-footer.jpg');
+      background-image: linear-gradient(rgba(77, 150, 169, 0.9),rgba(77, 150, 169, 0.9)100%), url('./assets/desktop/image-footer.jpg');
       background-size: 1440px 308px  ;
       display: flex;
       align-items: center;
